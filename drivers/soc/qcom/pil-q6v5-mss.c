@@ -63,8 +63,7 @@ static void log_modem_sfr(void)
 	strlcpy(reason, smem_reason, min(size, MAX_SSR_REASON_LEN));
 	pr_err("modem subsystem failure reason: %s.\n", reason);
 
-	smem_reason[0] = '\0';
-	wmb();
+	strlcpy(mfr_failure_reason, smem_reason, min(size, MAX_SSR_REASON_LEN));
 }
 
 static void restart_modem(struct modem_data *drv)
