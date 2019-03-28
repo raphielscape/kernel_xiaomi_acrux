@@ -1,4 +1,5 @@
 /* Copyright (c) 2014-2018, The Linux Foundation. All rights reserved.
+ * Copyright (C) 2019 XiaoMi, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -21,7 +22,6 @@
 #define SET_DELAY (2 * HZ)
 #define PROC_AWAKE_ID 12 /* 12th bit */
 int slst_gpio_base_id;
-
 
 /**
  * sleepstate_pm_notifier() - PM notifier callback function.

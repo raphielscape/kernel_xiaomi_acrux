@@ -145,8 +145,6 @@ static struct device_attribute dev_attr_##a_name = \
 
 #define ATTRIFY(a_name) (&dev_attr_##a_name)
 
-#define WAKEUP_GESTURE
-
 enum module_type {
 	TCM_TOUCH = 0,
 	TCM_DEVICE = 1,
