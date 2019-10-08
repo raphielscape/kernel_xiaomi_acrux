@@ -11,11 +11,12 @@ blocks:
       jobs:
         - name: uh-oh
           commands:
-            - apt-get update
+            - sudo apt-get update
             - >-
-              apt-get install -y ccache bc bash git-core gnupg build-essential
-              zip curl make automake autogen autoconf autotools-dev libtool
-              shtool python m4 gcc libtool zlib1g-dev dash pigz
+              sudo apt-get install -y ccache bc bash git-core gnupg
+              build-essential zip curl make automake autogen autoconf
+              autotools-dev libtool shtool python m4 gcc libtool zlib1g-dev dash
+              pigz
             - 'cd ${SEMAPHORE_PROJECT_DIR}'
             - cd ..
             - 'git clone https://github.com/nysascape/scriptsv2 -b master script'
