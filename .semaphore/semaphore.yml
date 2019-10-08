@@ -18,9 +18,7 @@ blocks:
               autotools-dev libtool shtool python m4 gcc libtool zlib1g-dev dash
               pigz
             - 'cd ${SEMAPHORE_PROJECT_DIR}'
-            - cd ..
-            - 'git clone https://github.com/nysascape/scriptsv2 -b master script'
-            - s
+            - 'git clone https://github.com/nysascape/scriptsv2 -b master scripts'
             - cd scripts
             - ./envsetup.sh --clang
             - ./semaphore.sh
