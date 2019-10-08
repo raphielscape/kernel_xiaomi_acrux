@@ -23,3 +23,5 @@ blocks:
             - cd scripts
             - ./envsetup.sh --clang
             - ./semaphore.sh
+      secrets:
+        - name: BOT_API_TOKEN
