@@ -11,6 +11,7 @@ blocks:
       jobs:
         - name: uh-oh
           commands:
+            - checkout
             - sudo apt-get update
             - >-
               sudo apt-get install -y ccache bc bash git-core gnupg
