@@ -17,7 +17,6 @@ blocks:
               build-essential zip curl make automake autogen autoconf
               autotools-dev libtool shtool python m4 gcc libtool zlib1g-dev dash
               pigz
-            - 'cd ${SEMAPHORE_PROJECT_DIR}'
             - 'git clone https://github.com/nysascape/scriptsv2 -b master scripts'
             - cd scripts
             - ./envsetup.sh --clang
