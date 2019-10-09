@@ -21,7 +21,7 @@ blocks:
             - >-
               git clone https://github.com/nysascape/scriptsv2 -b master
               kernelscripts
-            - ./kernelscripts/envsetup.sh --clang
+            - source ./kernelscripts/envsetup.sh --clang
             - ./kernelscripts/semaphore.sh
       secrets:
         - name: BOT_API_TOKEN
