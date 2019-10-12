@@ -26,5 +26,5 @@ blocks:
       secrets:
         - name: BOT_API_TOKEN
       env_vars:
-        - name: KERNELNAME
+        - name: KERNELRELEASE
           value: Yuri
