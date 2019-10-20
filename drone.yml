@@ -9,7 +9,7 @@ steps:
     image: raphielscape/spinsinfra:fedora
     environment:
       BOT_API_TOKEN:
-        from_secret: BOT_API_KEY
+        from_secret: BOT_API_TOKEN
       KERNELRELEASE: "Yuri"
     commands:
       - apt-get update && apt-get install -y libssl-dev
