@@ -12,8 +12,9 @@ steps:
         from_secret: BOT_API_KEY
       KERNELRELEASE: "Yuri"
     commands:
+      - apt-get update && apt-get install -y libssl-dev
       - git clone https://github.com/nysascape/scriptsv2.git -b drone kernelscripts
-      - source ./kernelscripts/envsetup.sh --gcc10
+      - source ./kernelscripts/envsetup.sh
       - bash kernelscripts/drone.sh
     when:
       branch:
